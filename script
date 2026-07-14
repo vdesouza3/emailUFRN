@@ -1,0 +1,231 @@
+###############################
+ga -> reinit
+ga -> sdfopen cac3002_prova.nc
+ga -> set display color white
+ga -. set grads off
+ga -> set grid off
+ga -> c
+ga -> set lon -30 60
+ga -> set lat 0 40
+ga -> set t 18 
+ga -> set lev 500
+
+##########shaded
+ga -> set gxout shaded 
+ga -> d air
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Temperatura 01 de junho de 2017 em 500mb
+ga -> printim air_shaded.png
+ga -> c
+ 
+ga -> d rhum
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Umidade relativa do ar 01 de junho de 2017 em 500mb
+ga -> printim rhum_shaded.png
+ga -> c
+
+ga -> d hgt
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Altura geopotencial 01 de junho de 2017 em 500mb
+ga -> printim hgt_shaded.png
+ga -> c
+
+ga -> d omega
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Omega 01 de junho de 2017 em 500mb
+ga -> printim omega_shaded.png
+ga -> c
+
+ga -> d uwnd
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Vento zonal em 01 de junho de 2017 em 500mb
+ga -> printim uwnd_shaded.png
+ga -> c
+
+ga -> d vwnd
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Vento meridional 01 de junho de 2017 em 500mb
+ga -> printim vwnd_shaded.png
+ga -> c
+
+##########contour
+ga -> set gxout contour 
+ga -> d air
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Temperatura 01 de junho de 2017 em 500mb
+ga -> printim air_contour.png
+ga -> c
+ 
+ga -> d rhum
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Umidade relativa do ar 01 de junho de 2017 em 500mb
+ga -> printim rhum_contour.png
+ga -> c
+
+ga -> d hgt
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Altura geopotencial 01 de junho de 2017 em 500mb
+ga -> printim hgt_contour.png
+ga -> c
+
+ga -> d omega
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Omega 01 de junho de 2017 em 500mb
+ga -> printim omega_contour.png
+ga -> c
+
+ga -> d uwnd
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Vento zonal em 01 de junho de 2017 em 500mb
+ga -> printim uwnd_contour.png
+ga -> c
+
+ga -> d vwnd
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Vento meridional 01 de junho de 2017 em 500mb
+ga -> printim vwnd_contour.png
+ga -> c
+
+##########grfill
+ga -> set gxout grfill 
+ga -> d air
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Temperatura 01 de junho de 2017 em 500mb
+ga -> printim air_grfill.png
+ga -> c
+ 
+ga -> d rhum
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Umidade relativa do ar 01 de junho de 2017 em 500mb
+ga -> printim rhum_grfill.png
+ga -> c
+
+ga -> d hgt
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Altura geopotencial 01 de junho de 2017 em 500mb
+ga -> printim hgt_grfill.png
+ga -> c
+
+ga -> d omega
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Omega 01 de junho de 2017 em 500mb
+ga -> printim omega_grfill.png
+ga -> c
+
+ga -> d uwnd
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Vento zonal em 01 de junho de 2017 em 500mb
+ga -> printim uwnd_grfill.png
+ga -> c
+
+ga -> d vwnd
+ga -> cbar
+ga -> draw xlab Longitude 
+ga -> draw ylab Latitude
+ga -> draw title Vento meridional 01 de junho de 2017 em 500mb
+ga -> printim vwnd_grfill.png
+ga -> c
+
+#######stream
+ga -> set gxout stream 
+ga -> d uwnd;vwnd
+ga -> draw xlab Longitude
+ga -> draw ylab Latitude
+ga -> draw title Stream 01 de junho de 2017
+ga -> printim stream_uwndvwnd.png
+
+##########barras
+ga -> set lon 15
+ga -> set lat 20
+ga -> set t 1 24
+ga -> set gxout bar
+ga -> set bargap 40
+ga -> d air
+ga -> draw xlab Meses
+ga -> draw ylab Celsius
+ga -> draw title Temperatura jan/16 a dez/17 em 1000mb
+ga -> printim air_barras.png
+
+ga -> d hgt
+ga -> draw xlab Meses
+ga -> draw ylab Altura geopotencial
+ga -> draw title Altura geopotencial jan/16 a dez/17 em 1000mb 
+ga -> printim hgt_barras.png
+
+ga -> d rhum
+ga -> draw xlab Meses
+ga -> draw ylab Umidade %
+ga -> draw title Umidade relativa do ar jan/16 a dez/17 em 1000mb 
+ga -> printim rhum_barras.png
+
+ga -> d omega
+ga -> draw xlab Meses
+ga -> draw ylab Omega
+ga -> draw title Omega jan/16 a dez/17 em 1000mb 
+ga -> printim omega_barras.png
+
+ga -> d uwnd
+ga -> draw xlab Meses
+ga -> draw ylab Vento zonal
+ga -> draw title Vento zonal jan/16 a dez/17 em 1000mb 
+ga -> printim air_barras.png
+
+ga -> d vwnd
+ga -> draw xlab Meses
+ga -> draw ylab Vento zonal
+ga -> draw title Vento meridional jan/16 a dez/17 em 1000mb 
+ga -> printim vwnd_barras.png
+
+##########line
+ga -> set gxout line
+ga -> set ccolor 4
+ga -> set cmark 4
+ga -> d -variavel-
+ga -> draw xlab Longitude
+ga -> draw ylab Latitude
+ga -> draw title line 01 de junho de 2017 em 1000mb
+ga -> printim line_-variavel-.png
+
+############barbela
+ga -> set gxout barb
+ga -> d uwnd;vwnd
+ga -> draw xlab Longitude
+ga -> draw ylab Latitude
+ga -> draw title Barbela de vento 01 de junho de 2017 nivel de pressao 1000mb
+ga -> printim barb_uwndvwnd.png
+ga -> c
+
